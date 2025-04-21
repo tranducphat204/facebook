@@ -26,7 +26,7 @@
                     console.log('Welcome! Fetching your information....');
                     FB.api('/me', { fields: 'name,email' }, function (userInfo) {
                         console.log('Good to see you, ' + userInfo.name + '.');
-                        console.log('Email:', userInfo.email);
+                        console.log('Avt:', userInfo.response);
                         // Gửi userInfo về server nếu cần
                     });
                 } else {
